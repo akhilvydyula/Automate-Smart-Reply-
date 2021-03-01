@@ -228,10 +228,6 @@ Since this belongs to the ‘how are you’ class, we append the output as
 output_row = [0, 0, 0, 0, 1, 0, 0, 0]
 ```
 
-The architecture of our NN is simple, as can be seen below. We have only 2 hidden layers.
-
-<img src="images/nn.jpg" width="1000">
-
 We train this for 1,000 epochs; this actually trains quite fast. It takes less than 30 seconds to train completely.
 
 Once the model is trained, we can use the model to predict a class on user input. Again we define an error threshold for when to offer a response. Here it is 95%. Instead of using and error threshold to determine if a message will get a smart reply, we could train/implement a binary classifier on all messages to determine if they will get a smart reply [1].
